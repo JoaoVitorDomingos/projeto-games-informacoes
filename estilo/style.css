@@ -11,7 +11,7 @@
 :root {
     --fonte-principal: 'Mukta', sans-serif;
     --fonte-negrito: 'Oswald', sans-serif;
-    --fonte-titulo: 'fonte-game', 'Anton', sans-serif;
+    --fonte-titulo: 'Anton', sans-serif;
 }
 
 * {
@@ -27,7 +27,7 @@ header {
 }
 
 header h1 {
-    font: 3.5em 'Anton', sans-serif;
+    font: 3.5em var(--fonte-titulo);
     margin-bottom: -15px;
 }
 
@@ -65,4 +65,40 @@ article.introducao > p {
 
 article.introducao > p#paragrafo-emoji::after {
     content: "\1F601 \1F44D";
+}
+
+article.background {
+    padding: 50px;
+
+    background: lightgray no-repeat fixed;
+    background-size: cover;
+}
+
+article.background > h2 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 3.5vw;
+    margin-bottom: 70px;
+
+    color: white;
+
+    text-shadow: 2px 2px black;
+}
+
+article.background > p {
+    font-family: var(--fonte-principal);
+    font-size: 2.1vw;
+
+    max-width: 40%;
+    padding: 20px;
+
+    text-align: justify;
+    text-indent: 30px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 21px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.195);
+
+    text-shadow: 1px 1px black;
 }
