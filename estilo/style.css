@@ -59,6 +59,8 @@ article.introducao > p {
     text-indent: 30px;
 
     margin: 30px;
+
+    text-shadow: 3px 2px 11px rgba(0, 0, 0, 0.39);
 }
 
 article.introducao > p#paragrafo-emoji::after {
