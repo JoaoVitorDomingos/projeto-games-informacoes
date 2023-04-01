@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 header {
     padding: 50px;
     text-align: center;
@@ -46,6 +50,15 @@ header a:hover {
     font-weight: bold;
 }
 
+strong > a{
+    text-decoration: none;
+}
+
+strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 article.introducao {
     padding-top: 70px;
     margin-bottom: 65px;
@@ -61,6 +74,10 @@ article.introducao > p {
     margin: 30px;
 
     text-shadow: 3px 2px 11px rgba(0, 0, 0, 0.39);
+}
+
+article.introducao > p > strong > a {
+    color: black;
 }
 
 article.introducao > p#paragrafo-emoji::after {
@@ -101,4 +118,29 @@ article.background > p {
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.195);
 
     text-shadow: 1px 1px black;
+}
+
+article.background > p > strong > a {
+    color: white;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+
+    background-color: rgb(174, 171, 171);
+}
+
+footer p {
+    display: inline;
+    margin-right: 7px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
